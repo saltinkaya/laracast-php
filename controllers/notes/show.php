@@ -6,7 +6,7 @@ $db = new Database($config["database"], "root", "");
 
 
 $heading = "Note:";
-$currentUserId = 2;
+$currentUserId = 1;
 
 $id = $_GET["id"];
 
@@ -24,4 +24,4 @@ authorize($note["user_id"] === $currentUserId);
 
 //dd($note);
 
-require "views/note.view.php";
+require "views/notes/show.view.php";
